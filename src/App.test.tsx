@@ -62,6 +62,6 @@ describe('largerInteger', () => {
   });
 
   it('should show error if both number if they are equal', () => {
-    expect(largerInteger(5, 5)).toThrowError('Both numbers are equal');
+    expect(() => largerInteger(5, 5)).toThrowError('Both numbers are equal');
   });
 });
